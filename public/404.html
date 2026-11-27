@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex" />
+  <title>Page not found | Vistara Web Labs</title>
+  <link rel="icon" type="image/png" href="/favicon-64.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&family=Sora:wght@600&display=swap" rel="stylesheet" />
+  <style>
+    *{box-sizing:border-box}
+    body{margin:0;min-height:100svh;display:grid;place-items:center;padding:24px;text-align:center;color:#eeedfb;font:500 17px/1.6 Manrope,system-ui,sans-serif;
+      background:radial-gradient(ellipse 80% 60% at 50% 0%,#17152d,transparent 70%),radial-gradient(circle at 80% 90%,rgba(100,140,255,.15),transparent 50%),#090b14}
+    .orbit{width:180px;height:180px;margin:0 auto 28px;position:relative}
+    .planet{position:absolute;inset:45px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#e9e2ff,#8a6cf6 35%,#2a1f6b 85%);box-shadow:0 0 60px rgba(146,117,255,.6)}
+    .ring{position:absolute;inset:0;border:1px solid rgba(88,217,232,.5);border-radius:50%;transform:rotateX(70deg) rotate(-16deg)}
+    .moon{position:absolute;width:10px;height:10px;border-radius:50%;background:#ffb38a;top:20px;right:30px;box-shadow:0 0 12px #ffb38a;animation:f 4s ease-in-out infinite}
+    @keyframes f{50%{transform:translate(-8px,10px)}}
+    h1{font:600 clamp(2.4rem,7vw,4rem)/1 Sora,sans-serif;letter-spacing:-.04em;margin:0}
+    p{color:#a3a2c2;max-width:40ch;margin:16px auto 30px}
+    a{display:inline-flex;align-items:center;gap:8px;min-height:52px;padding:0 26px;border-radius:999px;font-weight:700;text-decoration:none;color:#0b0a1c;background:linear-gradient(100deg,#e9e4ff,#b7c9ff 55%,#a6f0f7)}
+    @media (prefers-reduced-motion:reduce){.moon{animation:none}}
+  </style>
+</head>
+<body>
+  <main>
+    <div class="orbit" aria-hidden="true"><span class="ring"></span><span class="planet"></span><span class="moon"></span></div>
+    <h1>Lost in space.</h1>
+    <p>This page drifted out of orbit. Let's get you back to Vistara Web Labs.</p>
+    <a href="/">Back to the homepage</a>
+  </main>
+</body>
+</html>
